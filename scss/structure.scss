@@ -1,0 +1,62 @@
+body {
+  font-family: "Proxima Nova ScOsf Extra Condensed", sans-serif;
+  color: $site-black-text-color;
+  background-color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.site-footer {
+  background-color: $footer-bg-color;
+  color: $site-white-text-color;
+}
+
+.site-footer .footer-inner {
+  max-width: $nav-content-max-width;
+  margin: 0 auto;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer .logo {
+  border: 1px solid $site-white-text-color;
+  padding: 6px 10px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+}
+
+.site-footer .footer-copy {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.site-footer .footer-social a {
+  color: $site-white-text-color;
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .site-footer .footer-inner {
+    height: auto;
+    padding: 16px 20px 20px;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+
+  .site-footer .footer-social a {
+    margin: 0 8px;
+  }
+}
